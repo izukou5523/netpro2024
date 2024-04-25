@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NetproLabMember",
+            "request": "launch",
+            "mainClass": "NetproLabMember",
+            "projectName": "java-basic-1_1a4f843c"
+        },
+        {
+            "type": "java",
             "name": "KeyboardInputExample",
             "request": "launch",
             "mainClass": "KeyboardInputExample",
