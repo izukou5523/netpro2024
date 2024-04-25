@@ -3,22 +3,50 @@
 //import java.io.IOException;
 //import java.io.InputStreamReader;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class HowOldAreYou {
 
 	public static void main(String[] args) {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 			// BufferedReader というのは、データ読み込みのクラス(型)
 			// クラスの変数を作るには、new を使う。
 
 			// readLine() は、入出力エラーの可能性がある。エラー処理がないとコンパイルできない。
 			//  Java では、 try{ XXXXXXXX }  catch(エラーの型 変数) { XXXXXXXXXXXXXXXXXX} と書く
-		Scanner scanner = new Scanner(System.in);
 		
 		
+			//Scanner scanner = new Scanner(System.in);
+		
+	while(true){
 		try {
 			System.out.println("何歳ですか?");
-			int age = scanner.nextInt();
+			System.out.println("'q'もしくは'e'を押すと終了します");
+			//int age = scanner.nextInt();
+
+			String line = reader.readLine();
+			
+        
+
+			if(line.equals("q")||line.equals("e")){
+				System.out.println("プログラムを終了します");
+                break;
+
+			}
+
+			int age = Integer.parseInt(line);
+
+
+			if(age<0||age<=120){
+				System.out.println("0歳から119歳の間で入力してください");	
+            continue;
+			}
+			
+
+			
+
+			
 
 			int thisYear = 2024;
 		    int birthYear = 0;
@@ -48,13 +76,18 @@ public class HowOldAreYou {
 			System.out.println("あなたは2030年には、" + (age + 6) + "歳ですね。");
 			System.out.println("あなたが生まれた年は" + eraName + birthYear + "年ですね。");
 		}
+	
+	
 	    catch(Exception e) {
 			System.out.println(e);
 		}
-		scanner.close();
+
+		//scanner.close();
 
 
 	}
+}
+
 }
 
 //  課題    キーボードから数字を打ち込む
