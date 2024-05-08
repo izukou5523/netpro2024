@@ -41,7 +41,7 @@ public class MyExceptionHoliday {
 		LocalDate date = LocalDate.of(2024, 5, theday);
 		DayOfWeek dayOfWeek = date.getDayOfWeek();
 		
-		if(dayOfWeek == DayOfWeek.SATURDAY || dayOfWeek == DayOfWeek.SUNDAY){
+		if(dayOfWeek == DayOfWeek.SATURDAY || dayOfWeek == DayOfWeek.SUNDAY || theday == 3 || theday == 6){
 			System.out.println(theday + "日は休日です。");
 		} else{
 			throw new NoHolidayException(theday + "日は休日ではありません。");
