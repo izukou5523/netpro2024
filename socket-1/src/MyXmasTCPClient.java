@@ -8,7 +8,7 @@ public class MyXmasTCPClient {
 
     public static void main(String arg[]) {
         try {
-            Scanner scanner = new Scanner(System.in, "UFT-8");
+            Scanner scanner = new Scanner(System.in, "UTF-8");
             System.out.print("ポートを入力してください(5000など) → ");
             int port = scanner.nextInt();
             System.out.println("localhostの" + port + "番ポートに接続を要求します");
@@ -39,7 +39,7 @@ public class MyXmasTCPClient {
             System.out.println("サーバからのメッセージは" + replayMsg);
             String replayContent = okaeshiPresent.getContent();
             System.out.println(replayContent + "をもらいました！");
-            System.out.println("送るプレゼントに対してランダムな個数で返したかったのですができませんでした。");
+            System.out.println("送るプレゼントに対してランダムな個数で返したかったのですが単語のメッセージもその数字の分返されるようになってしまいました。");
 
 
             ois.close();
