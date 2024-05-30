@@ -1,0 +1,25 @@
+Microsoft Windows [Version 10.0.22631.3593]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\kousei\netpro2024\socket-3> cmd /C "C:\Users\kousei\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\21\bin\java.exe -XX:+ShowCodeDetailsInExceptionMessages -cp C:\Users\kousei\netpro2024\socket-3\bin kadai.UDPClient "
+送信メッセージを入力してください: hello
+サーバからの返信: HELLO
+送信メッセージを入力してください: good bye
+サーバからの返信: GOOD BYE
+送信メッセージを入力してください: sorry
+サーバからの返信: SORRY
+送信メッセージを入力してください: e
+サーバからの返信: E
+
+Microsoft Windows [Version 10.0.22631.3593]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\kousei\netpro2024\socket-3> cmd /C "C:\Users\kousei\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\21\bin\java.exe -XX:+ShowCodeDetailsInExceptionMessages -cp C:\Users\kousei\netpro2024\socket-3\bin kadai.UDPServer "
+サーバーはクライアントからのメッセージを待っています...
+受信: hello
+サーバーはクライアントからのメッセージを待っています...
+受信: good bye
+サーバーはクライアントからのメッセージを待っています...
+受信: sorry
+サーバーはクライアントからのメッセージを待っています...
+受信: e
